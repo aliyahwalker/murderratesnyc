@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+
+
+      <img class="logo" src="NYC Crime Map.png" alt="A screenshot of the NYC Crime Location Map for murders from January 2020 to September 2020."><!-- the jQuery library. You need this to be able to use jQuery ($) -->
+      <p class="caption"> NYC Crime Map for Murders from January 2020 to September 2020. <i> Credit: Aliyah Walker </i></p>
+      <h1> Data shows that COVID-19 might be the cause for higher murder rates in NYC </h1>
+      <section class="byline">
+        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+        By Aliyah Walker
+      </section>
+      <p class="dateline"> November 13, 2020 </p>
+
+      <hr style="height:1px;background-color:black;">
+
+      <p>Murders are on the rise in New York City. In October of 2020 murder rates have already surpassed the <a
+          href="https://www1.nyc.gov/assets/nypd/downloads/pdf/analysis_and_planning/historical-crime-data/seven-major-felony-offenses-2000-2019.pdf"> total amount recorded in 2019. </a>
+        There has been <a href="https://www.ny1.com/nyc/all-boroughs/news/2020/09/15/at-least-321-murders-in-nyc-this-year---the-largest-increase-in-decades---nypd-stats-show"> speculation </a> around the city that these rates have risen due to the
+        coronavirus pandemic.
+      </p>
+
+      <p><a href="https://www.jjay.cuny.edu/faculty/brian-lawton"> Dr. Brian Lawton, </a> a criminology professor who specializes in Public Health at CUNY’s John Jay College for Criminology, stated that COVID-19 might have something to do with the
+        rise in homicides. “The victim/offender relationship here is
+        key,” Dr. Lawton specified. Further stating that without having access to each “individual murders we need to be a bit cautious about making any sweeping statements.”
+      </p>
+
+      <p> Dr. Lawton also stated that it is important to note that the city “has been at a <a href="https://www1.nyc.gov/assets/nypd/downloads/pdf/analysis_and_planning/historical-crime-data/seven-major-felony-offenses-2000-2019.pdf"> historic low
+        </a> for homicide these past few years.” “We should always expect to see some fluctuation so a jump up may not be easily attributable to any one
+        thing.”
+      </p>
+      <hr style="width:50%;height:.5px;background-color:grey;">
+      <div class="flex">
+
+        <div class="chart">
+          <iframe title="Homicides in New York City" aria-label="Interactive line chart" id="datawrapper-chart-XQQQJ" src="https://datawrapper.dwcdn.net/XQQQJ/1/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="423"></iframe>
+          <script type="text/javascript">
+            ! function() {
+              "use strict";
+              window.addEventListener("message", (function(a) {
+                if (void 0 !== a.data["datawrapper-height"])
+                  for (var e in a.data["datawrapper-height"]) {
+                    var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                    t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                  }
+              }))
+            }();
+          </script>
+
+        </div>
+
+        <div class="descriptor">
+          <p> This chart shows us the increase in murders over the past four years. Each number of monthly cases was added onto the last calculation to show us the change by month ending with the month of October. This chart stops at the month of
+            October for each year to keep the comparison equal since 2020s data is only finalized up until this month.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="sources">
+      <p> <strong> Sources: </strong></p>
+      <ul>
+        <li> <a href="https://www1.nyc.gov/assets/nypd/downloads/pdf/analysis_and_planning/historical-crime-data/seven-major-felony-offenses-2000-2019.pdf"> NYPD Historical Murder Data </a></li>
+        <li> <a href="https://www.ny1.com/nyc/all-boroughs/news/2020/09/15/at-least-321-murders-in-nyc-this-year---the-largest-increase-in-decades---nypd-stats-show"> NY1 </a></li>
+        <li> <a href="https://compstat.nypdonline.org/2e5c3f4b-85c1-4635-83c6-22b27fe7c75c/view/90"> NYPD CompStat 2.0 </a></li>
+        <li> <a href="https://www1.nyc.gov/site/nypd/stats/reports-analysis/homicide.page"> NYPD Historical Homicide Reports </a></li>
+      </ul>
+    </section>
+  </body>
+
+</html>
